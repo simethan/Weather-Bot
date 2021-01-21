@@ -21,7 +21,7 @@ locale.setlocale(locale.LC_ALL, 'en_US')
 token = "UR-BOT-TOKEN-HERE"
 client = commands.Bot(command_prefix = '/')
 client.remove_command("help")
-game = discord.Game("with- do /help")
+game = discord.Game("with the weather?!")
 
     """LOGGING STUFF HERE"""
     
