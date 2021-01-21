@@ -1,3 +1,5 @@
+
+    """IMPORT STUFF HERE"""
 import discord
 import cmath
 from discord.ext import commands
@@ -21,6 +23,8 @@ client = commands.Bot(command_prefix = '/')
 client.remove_command("help")
 game = discord.Game("with- do /help")
 
+    """LOGGING STUFF HERE"""
+    
 @client.event  
 async def on_ready():  
     print(f'We have logged in as {client.user}')  
@@ -34,6 +38,8 @@ async def on_message(message):
     print()
     print(f"{message.channel}: {message.author}: {message.author.name}: {message.content}")
     await client.process_commands(message)
+    
+    """COMMAND STUFF HERE"""
     
 @client.command()
 async def weather(ctx,*,phrase=None):
@@ -86,5 +92,7 @@ async def w(ctx,*,prhase=None):
         await ctx.send(embed=weatherembed)
 
     await ctx.message.delete()
+    
+    """RUN THE BOT LOL"""
     
     client.run(token)
