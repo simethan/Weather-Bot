@@ -95,4 +95,4 @@ async def w(ctx,*,prhase=None):
     
     """RUN THE BOT LOL"""
     
-    client.run(token)
+client.run(token)
