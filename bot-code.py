@@ -1,21 +1,13 @@
 
     """IMPORT STUFF HERE"""
-import discord
-import cmath
+import discord, cmath, asyncio, json, locale, time, requests, datetime, sched
 from discord.ext import commands
 from discord import Permissions
 from discord.utils import get
-import asyncio
-import json
-import locale
-import time
-import requests
 from datetime import date
 from requests import get
 from json import loads, dump
-import datetime
 from json.decoder import JSONDecodeError
-import sched, time
 locale.setlocale(locale.LC_ALL, 'en_US')
 
 token = "UR-BOT-TOKEN-HERE"
